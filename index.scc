@@ -1,0 +1,122 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+:any-link {
+  color: black;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.image {
+ width: 400px;
+ height: 50%;
+ margin: auto;
+ border-radius: 5%;
+margin: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 3rem;
+  background-image: url("https://images.unsplash.com/photo-1597848212624-a19eb35e2651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+  background-size: cover;
+  font-family: courier;
+  text-align: center;
+  font-family: "SFNSText", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #F1C40F;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+ nav {
+  margin-right: 1.6rem;
+ }
+
+#nav-bar > ul {
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+  padding: 0.3rem;
+}
+
+.nav-link {
+  padding: 0 0.6rem;
+}
+
+h1 {
+  margin: 8rem auto 4rem auto;
+  font-size: 2.4rem;
+     
+}
+.color {
+  color: white;
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.justify {
+  text-align: justify;
+  line-height: 1.6rem;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  color: white;
+  font-size: 20px;
+}
+
+#follow a {
+  color: whitesmoke;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+ 
+  #howItWorks {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
