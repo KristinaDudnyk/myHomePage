@@ -7,7 +7,7 @@ body {
   color: white;
 }
 :any-link {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -117,8 +117,4 @@ video {
 
 
 
-/* don't edit this */
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
-}
-.jest-lite-report__errors { display:none }
+
