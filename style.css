@@ -3,7 +3,9 @@ body {
   margin: 0;
   height: 100%;
 }
-
+#weblinks{
+  color: white;
+}
 :any-link {
   color: black;
   text-decoration: none;
