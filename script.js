@@ -1,26 +1,33 @@
-var photo;
+var pages;
 
-// Describe this function...
-function first() {
-  if(--window.LoopTrap <= 0) throw "Infinite loop.";
-  let element_img2 = document.getElementById('img');
-  element_img2.setAttribute("src", photo[0]);
-  photo.push(photo.shift());
+
+pages = ['A farmer had a dog who used to wait by the roadside for vehicles to come.', 'As soon as one came, he would run down the road, barking and trying to overtake the car.', 'One day the farmer’s neighbor asked the farmer, “Do you think the dog is ever going to overtake those vehicles?”', 'The farmer replied, “That is not what bothers me. What bothers me is what he would do if he ever caught one.”', 'Many people in life behave like that dog who is pursuing meaningless goals.'];
+
+
+document.getElementById('turn_page').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  if (!!pages.length) {
+    let new_li = document.createElement('li');
+    new_li.innerText = pages.shift();
+
+    element_list.appendChild(new_li);
+  }
+
+});
+
+document.getElementById('the_end').addEventListener('click', (event) => {
+  let element_end = document.getElementById('end');
+  let new_img = document.createElement('img');
+  new_img.setAttribute("src", 'https://kb.rspca.org.au/wp-content/uploads/2018/11/golder-retriever-puppy.jpeg');
+
+  element_end.appendChild(new_img);
+
+});
+
+document.getElementById('repeat').addEventListener('click', (event) => {
+  let element_list2 = document.getElementById('list');
+  element_list2.replaceChildren();
+
+});
+if (!!pages.length) {
 }
-
-
-photo = ['https://images.unsplash.com/photo-1639341267320-2d062b250c0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60', 'https://i.pinimg.com/736x/98/ec/63/98ec639332536b757d746a5cea2601fb--revolution-knights.jpg', 'https://images.unsplash.com/photo-1630227286297-f7cc7c97f415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHVrcmFpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1517055313140-2dfe513e38e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fHVrcmFpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1597953754223-614067d67723?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHVrcmFpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'];
-first();
-
-
-document.getElementById('next').addEventListener('click', (event) => {
-  first();
-
-});
-
-document.getElementById('previous').addEventListener('click', (event) => {
-  let element_img = document.getElementById('img');
-  element_img.setAttribute("src", photo.slice(-1)[0]);
-  photo.unshift(photo.pop());
-
-});
