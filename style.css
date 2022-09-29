@@ -34,7 +34,7 @@ li {
 body {
   margin: 0;
   padding-bottom: 3rem;
-  background-image: url("https://images.unsplash.com/photo-1597848212624-a19eb35e2651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+  background-image: url("https://images.unsplash.com/photo-1533737338828-ebebc30718b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   background-size: cover;
   font-family: courier;
   text-align: center;
@@ -45,7 +45,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #F1C40F;
+  background-color: #FFC300 ;
   padding: 0.7rem;
   display: flex;
   justify-content: center;
@@ -147,7 +147,7 @@ ul {
     border: none;
     border-radius: 4px;
     margin: 1em 0em;
-    background-color: #FF5733;
+    background-color: #FFC300;
     color: white;
   }
 @media only screen and (min-width: 600px) {
