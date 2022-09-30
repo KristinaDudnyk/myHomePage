@@ -102,7 +102,7 @@ video {
 #follow a {
   color: whitesmoke;
 }
-#comment {
+#comment-area {
     display: block;
     position: relative;
     align-items: center;
@@ -110,6 +110,7 @@ video {
     margin-right: auto;
     width: 324px;
 }
+
   ul {
     list-style-type: none;
     margin: 0;
