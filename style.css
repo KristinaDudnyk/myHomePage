@@ -12,7 +12,7 @@ body {
 }
 
 .flex-container {
-  display: flex;
+  display: center;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
