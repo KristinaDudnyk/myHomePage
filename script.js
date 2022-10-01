@@ -36,7 +36,7 @@ function first() {
 }
 
 
-photo = ['https://images.unsplash.com/photo-1639341267320-2d062b250c0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60', 'https://i.pinimg.com/736x/98/ec/63/98ec639332536b757d746a5cea2601fb--revolution-knights.jpg', 'https://images.unsplash.com/photo-1630227286297-f7cc7c97f415?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHVrcmFpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1517055313140-2dfe513e38e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODB8fHVrcmFpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1597953754223-614067d67723?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHVrcmFpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'];
+photo = ['https://i1.wp.com/poshyk.info/wp-content/uploads/2017/06/mark-cuberg.jpg', 'https://ok-wifi.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/12-Lamarr.jpg.webp', 'https://i2.wp.com/poshyk.info/wp-content/uploads/2017/06/pavel-durov.jpg'];
 first();
 
 
