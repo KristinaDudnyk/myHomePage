@@ -2,14 +2,11 @@
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
-  <script src="script.js"></script>
-  <script src="./script.js"></script>
-  <head>
+    <head>
     <title>Kristina Dudnyk</title>
- 
-  <script src="./script.js"></script>
+ <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
+
   </head>
   <body>
      <header id="header" class="c-site-header">
@@ -38,7 +35,13 @@
            <p class="justify">
 Hello, my name is Kristina I’m 20 years old and I'm from Ukraine. Right now I'm studying on the course CodeYourFuture.And this is my my professional web page.Always welcome to everyone ).Here you can see and track my progress in learning programming languages. Also on this page I will publish useful articles, video materials, and my notes that I determined for myself while going through new material, which are very useful for beginners like me.
          </div>
- 
+  <section>
+<h1>My favorite CYF blocks</h1>
+<p> <img id="img" width="600px" height="500px">
+</p>
+<button id="previous">Previous</button>
+<button id="next">Next</button>
+       </section>
 
        <section>
          <h3>Useful Video</h3>
@@ -64,7 +67,34 @@ Hello, my name is Kristina I’m 20 years old and I'm from Ukraine. Right now I'
      
        
     </footer>
-    <script src="./script.js"></script>
+    <script>
+    var photo;
+
+// Describe this function...
+function first() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_img2 = document.getElementById('img');
+  element_img2.setAttribute("src", photo[0]);
+  photo.push(photo.shift());
+}
+
+
+photo = ['https://www.google.com/url?sa=i&url=https%3A%2F%2Fpolitring.com%2Fmir%2F11258-sozdatel-amazon-stal-samym-bogatym-chelovekom-v-mire.html&psig=AOvVaw24GH3oSii7BfYd5jGhX5ID&ust=1664696645142000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMDisrXEvvoCFQAAAAAdAAAAABAD', 'blob:https://web.telegram.org/a5fca72a-3ea3-451a-8eee-bfe9a357022d', 'blob:https://web.telegram.org/968e2aa3-9f32-4723-8509-1859c6d7ec18', 'blob:https://web.telegram.org/6a06537f-332f-48ef-bac7-af8147e862ec', 'blob:https://web.telegram.org/298a021b-4e91-4b45-af3c-4ad76c172baf'];
+first();
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  first();
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_img = document.getElementById('img');
+  element_img.setAttribute("src", photo.slice(-1)[0]);
+  photo.unshift(photo.pop());
+
+});
+      </script>
 </body>
   </html>
    
