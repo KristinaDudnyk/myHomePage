@@ -152,6 +152,20 @@ ul {
     color: white;
    
   }
+.button-comment {
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    font-size: 10pt;
+    border: none;
+    border-radius: 4px;
+    margin: 1em 0em;
+    background-color: #FA8072;
+    color: white;
+   
+  }
+
 
 @media only screen and (min-width: 600px) {
   .nav-link {
